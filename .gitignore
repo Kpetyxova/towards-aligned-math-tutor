@@ -1,0 +1,11 @@
+# Generated training splits are committed as .json.gz files.
+data/training_sets/dialog_data_ft/*.json
+data/training_sets/dpo/*.json
+
+# Local model outputs and caches.
+outputs/
+checkpoints/
+runs/
+*.log
+__pycache__/
+.ipynb_checkpoints/
