@@ -1,6 +1,6 @@
 # Towards Aligned Math Tutor
 
-Code and data for the paper **Towards Pedagogically Aligned LLM Tutors for Math Mistake Remediation**.
+Code and data for the paper [**Towards Pedagogically Aligned LLM Tutors for Math Mistake Remediation**](https://arxiv.org/pdf/2606.21502).
 
 [Kseniia Petukhova](https://scholar.google.com/citations?user=XsiLKJcAAAAJ&hl=en&oi=ao), [Tien Dat Nguyen](https://scholar.google.com/citations?user=R63K4U4AAAAJ&hl=en), [Ekaterina Kochmar](https://ekochmar.github.io/about/)
 
@@ -63,7 +63,7 @@ data/training_sets/dpo/dpo_{train,dev,test}.json
 data/training_sets/dpo/dpo_{train,dev,test}_extended.json
 ```
 
-The generated training splits are committed as `*.json.gz` files to fit in GitHub without Git LFS. To restore the exact `*.json` files after cloning, run:
+The generated training splits are committed as `*.json.gz` files. To restore the exact `*.json` files after cloning, run:
 
 ```bash
 python unpack_training_sets.py
@@ -131,3 +131,17 @@ For the full pedagogical evaluation reported in the paper, run the [AITutor-Eval
 
 - Synthetic preference generation and factuality checking require `OPENAI_API_KEY`.
 - The default DPO stage uses the `_extended` DPO files when they are present.
+
+## Citation
+
+```bibtex
+@misc{petukhova2026pedagogicallyalignedllmtutors,
+      title={Towards Pedagogically Aligned LLM Tutors for Math Mistake Remediation}, 
+      author={Kseniia Petukhova and Tien Dat Nguyen and Ekaterina Kochmar},
+      year={2026},
+      eprint={2606.21502},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.21502}, 
+}
+```

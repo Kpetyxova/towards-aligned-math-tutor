@@ -1,8 +1,4 @@
 """Restore compressed training-set JSON files.
-
-The generated training splits are committed as .json.gz files so they fit in
-GitHub without Git LFS. Run this script after cloning if the uncompressed
-.json files are not already present.
 """
 
 from __future__ import annotations
